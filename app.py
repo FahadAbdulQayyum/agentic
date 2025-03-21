@@ -40,7 +40,7 @@ def main(input_text):
             ],
             extra_headers = {
                 "HTTP-Referer": "https://openrouter.ai", # any valid referer
-                "X-Title": "OpenRouter Example", # any valid title .
+                "X-Title": "OpenRouter Example", # any valid title ..
             }
         )
 
