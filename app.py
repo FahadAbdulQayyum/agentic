@@ -32,13 +32,10 @@ def main(input_text):
             model = "deepseek/deepseek-r1:free",
             messages = [
                 {
-                    # "role": "system", "Content": "You are a helpful assistant.",
-                    # "role": "system", "Content": "You are a random dummy marketing data in json format following the given format.",
                     "role": "system", "Content": f"You are a provider of random dummy marketing data in json file following the given format: {data_schema}.",
                 },
                 {
                     "role": "user", "content": "Generate json dummy marketing data for super-mart",
-                    # "role": "user", "content": input_text,
                 }
             ],
             extra_headers = {
